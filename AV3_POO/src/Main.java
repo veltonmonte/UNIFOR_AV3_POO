@@ -39,6 +39,8 @@ public class Main {
 
             System.out.println("Digite sua senha:");
             String senha = scanner.nextLine();
+
+            Participante participante = new Participante();
         }
     }
 }

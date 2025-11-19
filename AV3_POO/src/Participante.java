@@ -73,7 +73,23 @@ public class Participante {
         this.telefoneParticipante = telefoneParticipante;
     }
 
-    //public Participante loginParticipante() throws IOException {}
+    public Participante loginParticipante() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("participantes.txt"));
+        String linha = bufferedReader.readLine();
+        while (linha != null) {
+            if(linha.contains(this.loginParticipante) && linha.contains(this.senhaParticipante)) {
+                String[] dados = linha.split(";");
+                return new Participante(Integer.parseInt(dados[0]),
+                                       dados[1],
+                                       dados[2],
+                                       dados[3],
+                                       dados[4],
+                                       dados[5]);
+            }
+            linha = bufferedReader.readLine();
+        }
+        return null;
+    }
 
     public void registrarParticipante() throws IOException {
         FileWriter fileWriter = new FileWriter("participantes.txt", true);
