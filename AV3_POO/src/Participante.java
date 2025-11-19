@@ -75,7 +75,17 @@ public class Participante {
 
     //public Participante loginParticipante() throws IOException {}
 
-    //public void registrarParticipante() {}
+    public void registrarParticipante() throws IOException {
+        FileWriter fileWriter = new FileWriter("participantes.txt", true);
+        try (BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+            bufferedWriter.write(this.idParticipante + ";" +
+                                 this.nomeParticipante + ";" +
+                                 this.loginParticipante + ";" +
+                                 this.emailParticipante + ";" +
+                                 this.senhaParticipante + ";" +
+                                 this.telefoneParticipante);
+        }
+    }
 
     //public void listarParticipantes() {}
 
