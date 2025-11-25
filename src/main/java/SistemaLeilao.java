@@ -1,5 +1,3 @@
-package main.java;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -165,7 +163,10 @@ public class SistemaLeilao {
 
         if (verItens.equals("s")) {
 
-            itemAtual.listarItens(leilaoAtual);
+
+            for (itemLeilao item : itemAtual.listarItens(leilaoAtual)) {
+                item.mostrar();
+            }
             System.out.println("Deseja dar uma lance? (s/n)");
             String desejaLance = scanner.next();
 
@@ -220,6 +221,8 @@ public class SistemaLeilao {
                     lanceAtual.setItemLeilao(itemAtual);
 
                     lanceAtual.registrarLance();
+                }else{
+                    System.out.println("Lance minimo não realizado!");
                 }
             }
         }

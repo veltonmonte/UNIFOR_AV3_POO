@@ -1,5 +1,3 @@
-package main.java;
-
 import java.io.*;
 import java.util.ArrayList;
 
@@ -126,7 +124,7 @@ public class itemLeilao {
                 setItemArrematado(Boolean.parseBoolean(dados[5]));
 
                 listaItens.add(item);
-                item.mostrar();
+                //item.mostrar();
             }
         }
 
