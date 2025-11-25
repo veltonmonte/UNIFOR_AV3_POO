@@ -1,0 +1,5 @@
+1;1;carro;20000.0;false;null
+2;1;carro antigo;15000.0;false;null
+3;1;moto;8000.0;false;null
+1;2;vaso raro;7000.0;false;null
+2;2;Quadro;3000.0;false;null
