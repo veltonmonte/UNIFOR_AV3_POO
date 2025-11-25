@@ -165,7 +165,7 @@ public class SistemaLeilao {
 
         if (verItens.equals("s")) {
 
-            System.out.println(itemAtual.listarItens(leilaoAtual));
+            itemAtual.listarItens(leilaoAtual);
             System.out.println("Deseja dar uma lance? (s/n)");
             String desejaLance = scanner.next();
 
@@ -175,20 +175,19 @@ public class SistemaLeilao {
                 int idItemEscolhido = scanner.nextInt();
                 scanner.nextLine();
 
-                itemLeilao itemEscolhido = null;
                 ArrayList<itemLeilao> itens = itemAtual.listarItens(leilaoAtual);
 
 
                 for (itemLeilao item : itens) {
                     if (item.getIdItem() == idItemEscolhido) {
-                        itemEscolhido = item;
-                        break; // achou → sai do loop
+                        itemAtual = item;
+                        break;
                     }
                 }
 
-                if (itemEscolhido != null) {
+                if (itemAtual != null) {
                     System.out.println("Item encontrado:");
-                    itemEscolhido.mostrar();
+                    itemAtual.mostrar();
                 } else {
                     System.out.println("Item não encontrado!");
                 }
@@ -203,7 +202,7 @@ public class SistemaLeilao {
                 System.out.println("Digite a hora do seu lance:");
                 String horaDoLance = scanner.nextLine();
 
-                if (lanceConcorrente >= itemEscolhido.getLanceMinimo()) {
+                if (lanceConcorrente >= itemAtual.getLanceMinimo()) {
 
                     if (participanteAtual == null) {
                         System.out.println("Erro: participante não identificado.");
@@ -218,8 +217,7 @@ public class SistemaLeilao {
                     lanceAtual.setDataLance(dataDoLance);
                     lanceAtual.setHorasLance(horaDoLance);
 
-                    // AQUI ESTAVA O ERRO → trocado itemAtual por itemEscolhido
-                    lanceAtual.setItemLeilao(itemEscolhido);
+                    lanceAtual.setItemLeilao(itemAtual);
 
                     lanceAtual.registrarLance();
                 }

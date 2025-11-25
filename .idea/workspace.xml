@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea4e5bee-51f5-41f5-8740-1588b79d5c11" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/itens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/itens.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/lances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lances.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/leiloes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/leiloes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/participantes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/participantes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/src/main/java/Lance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/src/main/java/Leilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Leilao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/src/main/java/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Participante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/src/main/java/SistemaLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaLeilao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO_AV3_LEILAO/src/main/java/itemLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itemLeilao.java" afterDir="false" />
+    <list default="true" id="ea4e5bee-51f5-41f5-8740-1588b79d5c11" name="Changes" comment="correção da estrutura">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UNIFOR_AV3_POO/main/java/SistemaLeilao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UNIFOR_AV3_POO/main/java/SistemaLeilao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UNIFOR_AV3_POO/main/java/itemLeilao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UNIFOR_AV3_POO/main/java/itemLeilao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaLeilao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itemLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itemLeilao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +69,27 @@
       <option name="presentableId" value="Default" />
       <updated>1764095976063</updated>
     </task>
+    <task id="LOCAL-00001" summary="correção da estrutura">
+      <option name="closed" value="true" />
+      <created>1764096516370</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764096516370</updated>
+    </task>
+    <task id="LOCAL-00002" summary="correção da estrutura">
+      <option name="closed" value="true" />
+      <created>1764096533265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764096533265</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="correção da estrutura" />
+    <option name="LAST_COMMIT_MESSAGE" value="correção da estrutura" />
   </component>
 </project>
