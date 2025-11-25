@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea4e5bee-51f5-41f5-8740-1588b79d5c11" name="Changes" comment="correção da estrutura">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leiloes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/leiloes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/participantes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/participantes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Leilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Leilao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Participante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaLeilao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itemLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itemLeilao.java" afterDir="false" />
-    </list>
+    <list default="true" id="ea4e5bee-51f5-41f5-8740-1588b79d5c11" name="Changes" comment="correção da estrutura" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +19,12 @@
     &quot;assignee&quot;: &quot;veltonmonte&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/veltonmonte/UNIFOR_AV3_POO.git&quot;,
-    &quot;accountId&quot;: &quot;6dd9bab0-b6ab-40ae-9154-6133ed44b03b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/veltonmonte/UNIFOR_AV3_POO.git",
+    "accountId": "26d212d6-58a3-472f-affc-ebb07c6c3532"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -50,6 +37,7 @@
   "keyToString": {
     "Application.Main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -101,22 +89,30 @@
       <option name="project" value="LOCAL" />
       <updated>1764096533265</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="correção da estrutura">
+      <option name="closed" value="true" />
+      <created>1764112299542</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764112299542</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="correção da estrutura" />
     <option name="LAST_COMMIT_MESSAGE" value="correção da estrutura" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/SistemaLeilao.java</url>
-          <line>178</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
