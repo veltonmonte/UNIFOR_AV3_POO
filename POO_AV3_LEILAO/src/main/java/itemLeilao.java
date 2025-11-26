@@ -76,24 +76,20 @@ public class itemLeilao {
         }
     }
 
-    public int gerarIdItemPorLeilao(Leilao leilao) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("itens.txt"));
-        String linha;
+    public int gerarId() throws IOException {
         int maiorId = 0;
 
-        while ((linha = br.readLine()) != null) {
-            String[] dados = linha.split(";");
+        try (BufferedReader br = new BufferedReader(new FileReader("itens.txt"))) {
+            String linha;
 
-            if (dados.length < 2) {
-                continue;
-            }
+            while ((linha = br.readLine()) != null) {
 
-            int idLeilaoArquivo = Integer.parseInt(dados[1]);
-            int idItemArquivo = Integer.parseInt(dados[0]);
+                String[] dados = linha.split(";");
 
-            if (idLeilaoArquivo == leilao.getIdLeilao()) {
-                if (idItemArquivo > maiorId) {
-                    maiorId = idItemArquivo;
+                int idAtual = Integer.parseInt(dados[0]);
+
+                if (idAtual > maiorId) {
+                    maiorId = idAtual;
                 }
             }
         }
@@ -101,6 +97,32 @@ public class itemLeilao {
         return maiorId + 1;
     }
 
+    public ArrayList<itemLeilao> encerrarLeilao(Leilao leilaoAtual, Lance lanceAtual) throws IOException {
+        ArrayList<itemLeilao> itens = new ArrayList<>();
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("itens.txt"));
+        String linha;
+        while ((linha = bufferedReader.readLine()) != null) {
+            String[] dados = linha.split(";");
+            int idLeilao = Integer.parseInt(dados[1]);
+
+            if(idLeilao == leilaoAtual.getIdLeilao()){
+                itemLeilao item = new itemLeilao();
+
+                item.setIdItem(Integer.parseInt(dados[0]));
+                item.setLeilao(leilaoAtual);
+                item.setDescricaoItem(dados[2]);
+                item.setLanceMinimo(Double.parseDouble(dados[3]));
+                item.setItemArrematado(Boolean.parseBoolean(dados[4]));
+                item.setLanceArrematante(lanceAtual);
+
+                itens.add(item);
+                item.mostrar();
+            }
+
+
+        }
+        return null;
+    }
 
     public ArrayList<itemLeilao> listarItens(Leilao leilaoAtual) throws IOException {
         ArrayList<itemLeilao> listaItens = new ArrayList<>();
@@ -129,6 +151,29 @@ public class itemLeilao {
 
         bufferedReader.close();
         return listaItens;
+    }
+
+    public itemLeilao criarItem(int idItem) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("itens.txt"));
+        String linha;
+
+        while ((linha = br.readLine()) != null) {
+            String[] dados = linha.split(";");
+            int idItemSalvo = Integer.parseInt(dados[0]);
+            int idLeilaoSalvo = Integer.parseInt(dados[1]);
+            if(idItemSalvo == idItem){
+                itemLeilao item = new itemLeilao();
+                Leilao leilao = new Leilao();
+                item.setIdItem(idItem);
+                item.setLeilao(leilao.criarLeilao(idLeilaoSalvo));
+                item.setDescricaoItem(dados[2]);
+                item.setLanceMinimo(Double.valueOf(dados[3]));
+                item.setItemArrematado(Boolean.parseBoolean(dados[4]));
+                return item;
+            }
+        }
+        br.close();
+        return null;
     }
 
 

@@ -8,6 +8,15 @@ public class Participante {
     private String senhaParticipante;
     private String telefoneParticipante;
 
+    public Participante(int idParticipante,String nomeParticipante,String loginParticipante, String emailParticipante,String senhaParticipante,String telefoneParticipante) {
+        this.idParticipante = idParticipante;
+        this.nomeParticipante = nomeParticipante;
+        this.loginParticipante = loginParticipante;
+        this.emailParticipante = emailParticipante;
+        this.senhaParticipante = senhaParticipante;
+        this.telefoneParticipante = telefoneParticipante;
+    }
+
     public Participante() {}
 
     public int getIdParticipante() {
@@ -62,7 +71,6 @@ public class Participante {
         this.telefoneParticipante = telefoneParticipante;
     }
 
-
     public Participante loginParticipante(String login, String senha) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader("participantes.txt"))) {
             String linha;
@@ -99,8 +107,6 @@ public class Participante {
         return null;
     }
 
-
-
     public void registrarParticipante() throws IOException {
         FileWriter fileWriter = new FileWriter("participantes.txt", true);
         try (BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
@@ -128,6 +134,48 @@ public class Participante {
 
         return utimoId + 1;
 
+    }
+
+    public boolean verificarParticipante(String login, String email) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("participantes.txt"));
+        String linha;
+
+        while ((linha = br.readLine()) != null) {
+            String[] dados = linha.split(";");
+
+            String loginExistente = dados[2];
+            String emailExistente = dados[3];
+
+            if (loginExistente.equalsIgnoreCase(login) || emailExistente.equalsIgnoreCase(email)) {
+                br.close();
+                return true;
+            }
+        }
+
+        br.close();
+        return false;
+    }
+
+    public Participante criarParticipante(int idParticipante) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("participantes.txt"));
+        String linha;
+
+        while ((linha = br.readLine()) != null) {
+            String[] dados = linha.split(";");
+            int idParticipanteSalvo = Integer.parseInt(dados[0]);
+            if(idParticipanteSalvo == idParticipante){
+                Participante participante = new Participante();
+                participante.setIdParticipante(idParticipante);
+                participante.setNomeParticipante(dados[1]);
+                participante.setLoginParticipante(dados[2]);
+                participante.setEmailParticipante(dados[3]);
+                participante.setSenhaParticipante(dados[4]);
+                participante.setTelefoneParticipante(dados[5]);
+                return participante;
+            }
+        }
+        br.close();
+        return null;
     }
 
     //public void listarParticipantes() {}

@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.jar.JarOutputStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -21,7 +22,8 @@ public class Main {
                 System.out.println("1: Começar leilão");
                 System.out.println("2: Consultar leilões");
                 System.out.println("3: Ver Lances");
-                System.out.println("4: Sair");
+                System.out.println("4: Encerrar Leilão");
+                System.out.println("5: Sair");
                 System.out.println("_______________________");
 
                 int opcao = scanner.nextInt();
@@ -36,8 +38,13 @@ public class Main {
                         break;
 
                     case 3:
+                        sistemaLeilao.mostrarLances(lanceAtual, participanteAtual);
+                        break;
 
                     case 4:
+                        sistemaLeilao.encerrarLeilao(leilaoAtual);
+                        break;
+                    case 5:
                         System.exit(0);
 
                 }

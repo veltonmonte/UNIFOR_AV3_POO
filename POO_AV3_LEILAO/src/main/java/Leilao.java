@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 
 public class Leilao {
     private int idLeilao;
@@ -73,6 +74,11 @@ public class Leilao {
         }
     }
 
+    public void encerrarLeilao(Leilao leilaoAtual) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("leiloes.txt"));
+        leilaoAtual.setStatusLeilao(false);
+    }
+
     public int gerarId() throws IOException {
         int maiorId = 0;
 
@@ -81,7 +87,7 @@ public class Leilao {
 
             while ((linha = br.readLine()) != null) {
 
-                if (linha.trim().isEmpty()) continue; // ignora linhas vazias
+                if (linha.trim().isEmpty()) continue;
 
                 String[] dados = linha.split(";");
 
@@ -96,11 +102,63 @@ public class Leilao {
         return maiorId + 1;
     }
 
-    public Leilao listarLeilao(int idLeilao) throws IOException {
+    public Leilao criarLeilao(int idLeilao) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader("leiloes.txt"));
         String linha;
+
         while ((linha = br.readLine()) != null) {
             String[] dados = linha.split(";");
+            int idLeilaoSalvo = Integer.parseInt(dados[0]);
+            if(idLeilaoSalvo == idLeilao){
+                Leilao leilao = new Leilao();
+                leilao.setIdLeilao(idLeilao);
+                leilao.setDataInicioLeilao(dados[1]);
+                leilao.setDataFimLeilao(dados[2]);
+                leilao.setHoraInicioLeilao(dados[3]);
+                leilao.setHoraFimLeilao(dados[4]);
+                leilao.setStatusLeilao(Boolean.parseBoolean(dados[5]));
+                return leilao;
+            }
+        }
+        br.close();
+        return null;
+    }
+
+    public ArrayList<Leilao> listarLeiloes() throws IOException {
+        ArrayList<Leilao> listaItens = new ArrayList<>();
+
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("leiloes.txt"));
+        String linha;
+
+        while ((linha = bufferedReader.readLine()) != null) {
+            String[] dados = linha.split(";");
+
+
+                Leilao leilao = new Leilao();
+                leilao.setIdLeilao(Integer.parseInt(dados[0]));
+                leilao.setDataInicioLeilao(dados[1]);
+                leilao.setDataFimLeilao(dados[2]);
+                leilao.setHoraInicioLeilao(dados[3]);
+                leilao.setStatusLeilao(Boolean.parseBoolean(dados[4]));
+                leilao.setHoraFimLeilao(dados[5]);
+
+                listaItens.add(leilao);
+                leilao.mostrar(Integer.parseInt(dados[0]));
+        }
+
+        bufferedReader.close();
+        return listaItens;
+    }
+
+
+
+    public void mostrar(int idLeilao) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("leiloes.txt"));
+        String linha;
+
+        while ((linha = br.readLine()) != null) {
+            String[] dados = linha.split(";");
+
             if (idLeilao == Integer.parseInt(dados[0])) {
                 Leilao leilao = new Leilao();
                 leilao.setIdLeilao(Integer.parseInt(dados[0]));
@@ -109,22 +167,17 @@ public class Leilao {
                 leilao.setHoraInicioLeilao(dados[3]);
                 leilao.setHoraFimLeilao(dados[4]);
                 leilao.setStatusLeilao(true);
-                leilao.mostrar();
-                return leilao;
+
+
+                System.out.println("____________________________________________________");
+                System.out.println("ID:"+leilao.getIdLeilao());
+                System.out.println("Data do Começo: "+leilao.getDataInicioLeilao());
+                System.out.println("Data do Fim: "+leilao.getDataFimLeilao());
+                System.out.println("Hora Inicio: "+leilao.getHoraInicioLeilao());
+                System.out.println("Hora Fim: "+leilao.getHoraFimLeilao());
+                System.out.println("Status: "+leilao.getStatusLeilao());
+                System.out.println("____________________________________________________");
             }
         }
-
-        return null;
     }
-
-    public void mostrar(){
-        System.out.println("Id: " + this.idLeilao);
-        System.out.println("Data inicio: " + this.dataInicioLeilao);
-        System.out.println("Data fim: " + this.dataFimLeilao);
-        System.out.println("Hora inicio: " + this.horaInicioLeilao);
-        System.out.println("Hora fim: " + this.horaFimLeilao);
-        System.out.println("Status: " + this.statusLeilao);
-    }
-
-
 }
