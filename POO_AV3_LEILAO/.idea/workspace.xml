@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06f46ee3-7487-404e-bfd0-f716d74c594f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/itens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/itens.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lances.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lances.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leiloes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/leiloes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/participantes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/participantes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Leilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Leilao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Participante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaLeilao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itemLeilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itemLeilao.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="35lgxJGoNwmRiBnhpvN4UvP6cEn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/velton/UNIFOR_AV3_POO/POO_AV3_LEILAO",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\velton\UNIFOR_AV3_POO\POO_AV3_LEILAO" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="POO_AV3_LEILAO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06f46ee3-7487-404e-bfd0-f716d74c594f" name="Changes" comment="" />
+      <created>1763690319618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763690319618</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
