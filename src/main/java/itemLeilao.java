@@ -146,6 +146,7 @@ public class itemLeilao {
                 setItemArrematado(Boolean.parseBoolean(dados[5]));
 
                 listaItens.add(item);
+                //item.mostrar();
             }
         }
 
@@ -181,7 +182,7 @@ public class itemLeilao {
         System.out.println("ID: " + this.idItem);
         System.out.println("Descricao: " + this.descricaoItem);
         System.out.println("Lance mínimo: " + this.lanceMinimo);
-        System.out.println("Item: " + this.itemArrematado);
+        System.out.println("Item arrematado: " + this.itemArrematado);
         System.out.println("Lance arrematante: " + this.lanceArrematante);
     }
 

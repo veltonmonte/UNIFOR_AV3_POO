@@ -5,4 +5,3 @@
 5;Fulano;Fulano1010;Fulano@gmail.com;fulano123;12123232
 6;beltrano;baltrano321;beltrano@gmail.com;beltrano321;43434545
 7;ciclano;ciclano1432;ciclano@gmail.com;123456;12123232
-8;teste;teste;teste@gmail.com;123;1234
